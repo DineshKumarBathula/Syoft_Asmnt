@@ -228,3 +228,86 @@ body {
   width: 50px;
   height: 50px;
 }
+/* For tablets and larger mobile devices */
+@media only screen and (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    height: auto; /* Adjust height for vertical stacking */
+    width: 100vw;
+  }
+
+  .signup-left,
+  .signup-right {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .signup-left h2,
+  .signup-right h2 {
+    font-size: 1.8em;
+  }
+
+  .signup-left p,
+  .signup-right p {
+    font-size: 1em;
+  }
+
+  .signup-left .images {
+    flex-wrap: wrap;
+  }
+
+  .signup-left .images img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+  }
+
+  .signup-right input {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .signup-right button {
+    font-size: 14px;
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+  .signup-container {
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .signup-left,
+  .signup-right {
+    padding: 15px;
+  }
+
+  .signup-left h2,
+  .signup-right h2 {
+    font-size: 1.5em;
+  }
+
+  .signup-left p,
+  .signup-right p {
+    font-size: 0.9em;
+  }
+
+  .signup-left .images img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .signup-right input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup-right button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
